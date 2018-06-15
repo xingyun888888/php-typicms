@@ -1,0 +1,57 @@
+.table-main {
+
+    th {
+        white-space: nowrap;
+    }
+
+    td {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+        vertical-align: middle !important;
+    }
+
+    .checkboxes {
+        width: 30px;
+    }
+
+    .delete {
+        width: 30px;
+    }
+
+    .edit {
+        width: 50px;
+    }
+
+    .position {
+        width: 50px;
+    }
+
+    .status {
+        width: 50px;
+    }
+
+    .image {
+        width: 100px;
+    }
+
+    .date,
+    .created_at,
+    .updated_at,
+    .start_date,
+    .end_date {
+        width: 160px;
+    }
+
+    .files {
+        width: 70px;
+    }
+
+    .action {
+        width: 120px;
+    }
+
+    .user_name .text-truncatable {
+        width: 150px;
+    }
+
+}

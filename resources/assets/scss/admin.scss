@@ -1,0 +1,129 @@
+@import 'admin/bootstrap';
+@import 'admin/buttons';
+@import 'node_modules/font-awesome/scss/font-awesome';
+@import 'navbar';
+@import 'auth';
+@import 'fancybox';
+@import 'alertify';
+@import 'admin/angular-ui-tree';
+@import 'admin/sortable-tree';
+@import 'admin/dropzone';
+@import 'admin/files';
+@import 'admin/files-list';
+@import 'admin/selectize.bootstrap4';
+@import 'admin/sidebar';
+@import 'admin/smart-table';
+@import 'admin/tables';
+@import 'admin/twilight';
+@import 'admin/sortable';
+@import 'admin/filepicker-modal';
+@import 'admin/permissions';
+@import 'admin/modal';
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.container-menulinks {
+    position: static;
+}
+
+.main {
+    padding: 2rem 1.5rem 1.5rem;
+    @include media-breakpoint-up(md) {
+        min-height: 0;
+        margin-left: 260px;
+    }
+}
+
+h1 {
+    margin-top: 0;
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-status {
+    padding: 2px;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &-switch {
+        font-size: 20px !important;
+        color: $primary;
+    }
+
+    &-switch.fa-toggle-off {
+        color: $gray-400;
+    }
+}
+
+.container-system-locales {
+    max-height: 150px;
+    overflow: scroll;
+}
+
+.tab-content {
+    padding-top: 15px;
+}
+
+.btn-toolbar {
+    margin-bottom: 20px;
+}
+
+.delete-attachment {
+    cursor: pointer;
+}
+
+.btn-add,
+.btn-back {
+    font-size: 36px;
+    line-height: 1.35;
+    margin-right: 10px;
+    float: left;
+}
+
+.btn-clear-history {
+    @extend .btn;
+    @extend .btn-outline-secondary;
+    @extend .btn-xs;
+
+    float: right;
+}
+
+.checkbox.form-group-translation {
+    margin-bottom: 20px;
+
+    & + .checkbox.form-group-translation {
+        margin-top: 10px;
+    }
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.text-truncatable {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
