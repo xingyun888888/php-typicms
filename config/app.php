@@ -159,7 +159,7 @@ return [
         Illuminate\Redis\RedisServiceProvider::class,
         Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
         Illuminate\Session\SessionServiceProvider::class,
-        // Illuminate\Translation\TranslationServiceProvider::class,
+         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
@@ -172,7 +172,7 @@ return [
         Typidesign\Translations\ArtisanTranslationsServiceProvider::class,
         TypiCMS\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
-//        TypiCMS\Modules\Translations\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Translations\Providers\ModuleProvider::class,
 //        TypiCMS\Modules\Blocks\Providers\ModuleProvider::class,
         TypiCMS\Modules\Settings\Providers\ModuleProvider::class,
         TypiCMS\Modules\History\Providers\ModuleProvider::class,

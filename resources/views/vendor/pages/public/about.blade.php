@@ -24,30 +24,31 @@
 
         <div class="container">
             <div class="empty-space col-xs-b60 col-sm-b120"></div>
+            @foreach(\Files::whereName('about')->first()->children()->whereName('header')->first()->children as $item)
             <div class="row vertical-aligned-columns">
                 <div class="col-sm-7 col-sm-push-5 col-xs-b30 col-sm-b0">
                     <div class="thumbnail-shortcode-4">
                         <div class="content">
-                            <div class="layer-1 background" style="background-image: url(/yawei/img/thumbnail-59.jpg);"></div>
-                            <div class="layer-2 border border-image" style="border-image-source: url(/yawei/img/thumbnail-60.jpg);"></div>
-                            <div class="layer-3 background" style="background-image: url(/yawei/img/thumbnail-61.jpg);"></div>
+                            <div class="layer-1 background" style="background-image: url({{$item->present()->thumbSrc(null, null, [], 'name')}});"></div>
+                            <div class="layer-2 border border-image" style="border-image-source: url({{$item->present()->thumbSrc(null, null, [], 'name')}});"></div>
+                            <div class="layer-3 background" style="background-image: url({{$item->present()->thumbSrc(null, null, [], 'name')}});"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-5 col-sm-pull-7">
                     <div class="sa">
-                        <h3>Give us a task &amp; we'll imlement it</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-                        <p>Sed ut perspiciatis, unde omnis iste natus error sit volue iste accusantium doloremque laudantium,totam rem aperia, quae ab illo inventore veritatis et quasi architecto beatae explicabo Nemo enim ipsam voluptatem, quia.</p>
+                        <h3>{{$item->alt_attribute}}</h3>
+                        <p>{{$item->description}}</p>
                     </div>
                 </div>
             </div>
+            @endforeach
             <div class="empty-space col-xs-b45 col-sm-b90"></div>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <article class="sa">
                         <h3>我们的团队</h3>
-                        <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        {{--<p>Et harum quidem rerum facilis est et expedita distinctio.</p>--}}
                     </article>
                     <div class="empty-space col-xs-b25 col-sm-b50"></div>
                 </div>
@@ -183,7 +184,7 @@
                                     <div class="col-sm-7 col-xs-b30 col-sm-b0">
                                         <div class="thumbnail-shortcode-6">
                                             <div class="content">
-                                                <div class="layer-1 border border-image" style="border-image-source: url(/yawei/img/thumbnail-65.jpg);"></div>
+                                                <div class="layer-1 border border-image" style="border-image-source: url({{$item->present()->thumbSrc(null, null, [], 'name')}});"></div>
                                                 <div class="layer-2 background" style="background-image: url({{$item->present()->thumbSrc(null, null, [], 'name')}});"></div>
                                             </div>
                                         </div>
@@ -226,7 +227,7 @@
                 <div class="col-md-12 text-center">
                     <article class="sa">
                         <h3>我们的客户</h3>
-                        <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        {{--<p>Et harum quidem rerum facilis est et expedita distinctio.</p>--}}
                     </article>
                     <div class="empty-space col-xs-b25 col-sm-b50"></div>
                 </div>
